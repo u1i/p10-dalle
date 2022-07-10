@@ -1,0 +1,8 @@
+convert o1.gif o2.gif out.gif
+
+for p in $(seq 2 8)
+do
+	echo $p
+	convert out.gif o$((p+1)).gif tmp.gif
+	mv tmp.gif out.gif
+done

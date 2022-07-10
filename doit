@@ -1,0 +1,7 @@
+# shapemorph "512,512 512,512"
+
+for p in $(seq 8)
+do
+	echo $p
+	shapemorph "512,512 512,512" 0${p}.gif 0$((p+1)).gif o$p.gif
+done
